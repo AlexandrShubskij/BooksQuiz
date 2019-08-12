@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papirus" translatesAutoresizingMaskIntoConstraints="NO" id="qAl-LK-hgT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-J1-qru" userLabel="Game Name">
+                                <rect key="frame" x="92.333333333333329" y="372.66666666666669" width="229.33333333333337" height="151.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-Yg-Zq7">
+                                        <rect key="frame" x="0.0" y="0.0" width="229.33333333333334" height="69.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="55"/>
+                                        <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gP-VI-F1J">
+                                        <rect key="frame" x="0.0" y="49.666666666666622" width="229.33333333333334" height="101.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="80"/>
+                                        <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Lord Obormot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVq-py-ma7">
+                                <rect key="frame" x="111" y="573.66666666666663" width="192" height="25.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="qAl-LK-hgT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cxm-92-h7W"/>
+                            <constraint firstItem="qAl-LK-hgT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KI2-xS-V4x"/>
+                            <constraint firstItem="Vvh-J1-qru" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Q5n-jQ-AId"/>
+                            <constraint firstItem="qVq-py-ma7" firstAttribute="top" secondItem="Vvh-J1-qru" secondAttribute="bottom" constant="50" id="SlK-a3-Gj9"/>
+                            <constraint firstItem="qAl-LK-hgT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y9J-AP-Dek"/>
+                            <constraint firstItem="qAl-LK-hgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzq-Aj-dua"/>
+                            <constraint firstItem="qVq-py-ma7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i94-f0-cak"/>
+                            <constraint firstItem="Vvh-J1-qru" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="of3-Pt-WSC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="papirus" width="600" height="768"/>
+    </resources>
+</document>
