@@ -128,27 +128,27 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
             switch answerField.text?.uppercased() == questionsAndAnswersRuList[questionValue] {
             case true:
                 dvc.message = "Ура! Верный ответ!"
-                switch (Score.sessionRightAnswers == nil)&&(Score.totalRightAnswers == nil){
+                switch (Score.gameRightAnswers == nil)&&(Score.sessionRightAnswers == nil){
                 case true:
+                    Score.gameRightAnswers = 0
                     Score.sessionRightAnswers = 0
-                    Score.totalRightAnswers = 0
+                    Score.gameRightAnswers! += 1
                     Score.sessionRightAnswers! += 1
-                    Score.totalRightAnswers! += 1
                 case false:
+                    Score.gameRightAnswers! += 1
                     Score.sessionRightAnswers! += 1
-                    Score.totalRightAnswers! += 1
                 }
             case false:
                 dvc.message = "Упс... Ответ неверный..."
-                switch (Score.sessionWrongAnswers == nil)&&(Score.totalWrongAnswers == nil){
+                switch (Score.gameWrongAnswers == nil)&&(Score.sessionlWrongAnswers == nil){
                 case true:
-                    Score.sessionWrongAnswers = 0
-                    Score.totalWrongAnswers = 0
-                    Score.sessionWrongAnswers! += 1
-                    Score.totalWrongAnswers! += 1
+                    Score.gameWrongAnswers = 0
+                    Score.sessionlWrongAnswers = 0
+                    Score.gameWrongAnswers! += 1
+                    Score.sessionlWrongAnswers! += 1
                 case false:
-                    Score.sessionWrongAnswers! += 1
-                    Score.totalWrongAnswers! += 1
+                    Score.gameWrongAnswers! += 1
+                    Score.sessionlWrongAnswers! += 1
                 }
             }
             answerField.text = nil
@@ -156,27 +156,27 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
             switch answerField.text?.uppercased() == questionsAndAnswersEnList[questionValue] {
             case true:
                 dvc.message = "Good! You're right!"
-                switch (Score.sessionRightAnswers == nil)&&(Score.totalRightAnswers == nil){
+                switch (Score.gameRightAnswers == nil)&&(Score.sessionRightAnswers == nil){
                 case true:
+                    Score.gameRightAnswers = 0
                     Score.sessionRightAnswers = 0
-                    Score.totalRightAnswers = 0
+                    Score.gameRightAnswers! += 1
                     Score.sessionRightAnswers! += 1
-                    Score.totalRightAnswers! += 1
                 case false:
+                    Score.gameRightAnswers! += 1
                     Score.sessionRightAnswers! += 1
-                    Score.totalRightAnswers! += 1
                 }
             case false:
                 dvc.message = "Oops... Your answer is wrong..."
-                switch (Score.sessionWrongAnswers == nil)&&(Score.totalWrongAnswers == nil){
+                switch (Score.gameWrongAnswers == nil)&&(Score.sessionlWrongAnswers == nil){
                 case true:
-                    Score.sessionWrongAnswers = 0
-                    Score.totalWrongAnswers = 0
-                    Score.sessionWrongAnswers! += 1
-                    Score.totalWrongAnswers! += 1
+                    Score.gameWrongAnswers = 0
+                    Score.sessionlWrongAnswers = 0
+                    Score.gameWrongAnswers! += 1
+                    Score.sessionlWrongAnswers! += 1
                 case false:
-                    Score.sessionWrongAnswers! += 1
-                    Score.totalWrongAnswers! += 1
+                    Score.gameWrongAnswers! += 1
+                    Score.sessionlWrongAnswers! += 1
                 }
                 
             }

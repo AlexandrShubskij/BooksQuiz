@@ -29,10 +29,10 @@ class ScoreViewController: UIViewController {
         totalRightAnswersCount.text = "0"
         sessionWrongAnswersCount.text = "0"
         totalWrongAnswersCount.text = "0"
+        Score.gameRightAnswers = nil
         Score.sessionRightAnswers = nil
-        Score.totalRightAnswers = nil
-        Score.sessionWrongAnswers = nil
-        Score.totalWrongAnswers = nil
+        Score.gameWrongAnswers = nil
+        Score.sessionlWrongAnswers = nil
     }
     
     @IBAction func homeScoreButton(_ sender: UIButton) {
@@ -40,30 +40,30 @@ class ScoreViewController: UIViewController {
     
     
     func check() {
-        if Score.sessionRightAnswers == nil {
+        if Score.gameRightAnswers == nil {
             sessionRightAnswersCount.text = "0"
         } else {
-            sessionRightAnswersCount.text = "\(Score.sessionRightAnswers!)"
-            Score.sessionRightAnswers = 0
+            sessionRightAnswersCount.text = "\(Score.gameRightAnswers!)"
+            Score.gameRightAnswers = 0
         }
         
-        if Score.totalRightAnswers == nil {
+        if Score.sessionRightAnswers == nil {
             totalRightAnswersCount.text = "0"
         } else {
-            totalRightAnswersCount.text = "\(Score.totalRightAnswers!)"
+            totalRightAnswersCount.text = "\(Score.sessionRightAnswers!)"
         }
         
-        if Score.sessionWrongAnswers == nil {
+        if Score.gameWrongAnswers == nil {
             sessionWrongAnswersCount.text = "0"
         } else {
-            sessionWrongAnswersCount.text = "\(Score.sessionWrongAnswers!)"
-            Score.sessionWrongAnswers = 0
+            sessionWrongAnswersCount.text = "\(Score.gameWrongAnswers!)"
+            Score.gameWrongAnswers = 0
         }
         
-        if Score.totalWrongAnswers == nil {
+        if Score.sessionlWrongAnswers == nil {
             totalWrongAnswersCount.text = "0"
         } else {
-            totalWrongAnswersCount.text = "\(Score.totalWrongAnswers!)"
+            totalWrongAnswersCount.text = "\(Score.sessionlWrongAnswers!)"
         }
     }
     
@@ -75,20 +75,20 @@ class ScoreViewController: UIViewController {
             check()
             homeButton.setTitle("〈 ДОМОЙ", for: .normal)
             resetButton.setTitle("СБРОС ↺", for: .normal)
-            sessionRightAnswers.text = "Правильных ответов за сессию"
-            totalRightAnswers.text = "Правильных ответов всего"
-            sessionWrongAnswers.text = "Неправильных ответов за сессию"
-            totalWrongAnswers.text = "Неправильных ответов всего"
+            sessionRightAnswers.text = "Правильных ответов за игру"
+            totalRightAnswers.text = "Правильных ответов за сессию"
+            sessionWrongAnswers.text = "Неправильных ответов за игру"
+            totalWrongAnswers.text = "Неправильных ответов за сессию"
             
             
         case false:
             check()
             homeButton.setTitle("〈 HOME", for: .normal)
             resetButton.setTitle("RESET ↺", for: .normal)
-            sessionRightAnswers.text = "Right answers per session"
-            totalRightAnswers.text = "Total right answers"
-            sessionWrongAnswers.text = "Wrong answers per session"
-            totalWrongAnswers.text = "Total wrong answers"
+            sessionRightAnswers.text = "Right answers per game"
+            totalRightAnswers.text = "Right answers per session"
+            sessionWrongAnswers.text = "Wrong answers per game"
+            totalWrongAnswers.text = "wrong answers per session"
             
             
         }
