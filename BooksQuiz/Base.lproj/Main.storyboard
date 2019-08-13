@@ -116,21 +116,7 @@
                                     <constraint firstAttribute="width" constant="160.5" id="F2A-Rh-B5z"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpc-37-HaM">
-                                <rect key="frame" x="40" y="455" width="240" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="rWM-ov-IXU"/>
-                                    <constraint firstAttribute="height" constant="38" id="siB-YQ-vdq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <state key="normal" title="〈HOME">
-                                    <color key="titleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="J98-6X-V9I" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="MBb-lQ-1cB"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пишите  Ваш ответ здесь" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-gY-LgJ" userLabel="Answer Field" colorLabel="IBBuiltInLabel-Blue">
+                            <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пишите  Ваш ответ здесь" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6zn-gY-LgJ" userLabel="Answer Field" customClass="ShakingTextField" customModule="BooksQuiz" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="40" y="297" width="240" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -165,7 +151,6 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="systemFillColor"/>
                         <constraints>
                             <constraint firstItem="mGi-3X-iBa" firstAttribute="centerX" secondItem="lIb-sz-E2y" secondAttribute="centerX" id="2Hh-rn-cdA"/>
-                            <constraint firstItem="lIb-sz-E2y" firstAttribute="bottom" secondItem="rpc-37-HaM" secondAttribute="bottom" constant="75" id="2rf-vd-nC7"/>
                             <constraint firstItem="soT-NV-ggk" firstAttribute="top" secondItem="6zn-gY-LgJ" secondAttribute="bottom" constant="30" id="3xN-cr-JeD"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="bottom" secondItem="lIb-sz-E2y" secondAttribute="bottom" id="D11-0n-fvr"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="trailing" secondItem="lIb-sz-E2y" secondAttribute="trailing" id="LuY-tu-IW4"/>
@@ -174,10 +159,8 @@
                             <constraint firstItem="Yvy-qk-zPN" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="XwL-PE-4hU"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="fp4-C9-HfJ"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="leading" secondItem="lIb-sz-E2y" secondAttribute="leading" id="h6F-Dg-bBD"/>
-                            <constraint firstItem="rpc-37-HaM" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="hmT-3M-8hp"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="jhy-wc-9od"/>
                             <constraint firstItem="soT-NV-ggk" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="jld-hP-GmH"/>
-                            <constraint firstItem="rpc-37-HaM" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="mYF-Yk-pT9"/>
                             <constraint firstItem="mGi-3X-iBa" firstAttribute="top" secondItem="lIb-sz-E2y" secondAttribute="top" constant="20" id="mnj-2v-xzQ"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="top" secondItem="lIb-sz-E2y" secondAttribute="top" id="zwX-wv-HpZ"/>
                         </constraints>
@@ -187,13 +170,11 @@
                     <navigationItem key="navigationItem" id="3Bl-EI-SmT"/>
                     <connections>
                         <outlet property="answerButton" destination="soT-NV-ggk" id="Kbi-wf-vYk"/>
-                        <outlet property="answerField" destination="6zn-gY-LgJ" id="DP3-N6-ry7"/>
-                        <outlet property="homeButton" destination="rpc-37-HaM" id="p9q-Re-kbL"/>
+                        <outlet property="answerField" destination="6zn-gY-LgJ" id="I7l-vq-xSo"/>
                         <outlet property="questionLabel" destination="Yvy-qk-zPN" id="DCu-NA-rPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ar-OS-DA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="J98-6X-V9I" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="821" y="124"/>
         </scene>

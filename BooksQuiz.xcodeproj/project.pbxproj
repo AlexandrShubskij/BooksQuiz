@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F242D54922FDDE9C004D4D0E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = F242D54822FDDE9C004D4D0E /* Score.swift */; };
 		F2B9A09423004CAF00EF8DD8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2B9A09323004CAF00EF8DD8 /* .gitignore */; };
+		F2C1DE8D2302A01500DFE459 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */; };
 		F2CEC77322F48CF300030E2E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CEC77222F48CF300030E2E /* ResultViewController.swift */; };
 		F2CEC77522F49D0200030E2E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CEC77422F49D0200030E2E /* ScoreViewController.swift */; };
 		F2F78E9922F43E5E00941143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F78E9822F43E5E00941143 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		F242D54822FDDE9C004D4D0E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		F2B9A09323004CAF00EF8DD8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		F2CEC77222F48CF300030E2E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F2CEC77422F49D0200030E2E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		F2F78E9522F43E5E00941143 /* BooksQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 		F2F78E9722F43E5E00941143 /* BooksQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */,
 				F2F78E9822F43E5E00941143 /* AppDelegate.swift */,
 				F2F78E9A22F43E5E00941143 /* SceneDelegate.swift */,
 				F2F78E9C22F43E5E00941143 /* ViewController.swift */,
@@ -256,6 +259,7 @@
 				F2F78EC922F46FE300941143 /* QuestionViewController.swift in Sources */,
 				F2F78E9B22F43E5E00941143 /* SceneDelegate.swift in Sources */,
 				F2CEC77522F49D0200030E2E /* ScoreViewController.swift in Sources */,
+				F2C1DE8D2302A01500DFE459 /* ShakingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

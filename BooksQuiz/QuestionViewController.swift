@@ -16,22 +16,21 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         createQuestionsList()
-        answerButton.isHidden = true
         questionsAndAnswersUI()
         localizationChoiceQuestion()
-        self.answerField.delegate = self
+        answerField.delegate = self
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         answerField.text = ""
-        answerButton.isHidden = true
         return false
     }
     
     
     @IBOutlet weak var questionLabel: UILabel!
     
-    @IBOutlet weak var answerField: UITextField!
+//    @IBOutlet weak var answerField: UITextField!
+    @IBOutlet weak var answerField: ShakingTextField!
     
     @IBOutlet weak var answerButton: UIButton!
     
@@ -39,16 +38,11 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func answerButton(_ sender: UIButton) {
-        guard answerField.text?.isEmpty == false else {
-            answerButton.isHidden = true
-            return
-        }
     }
     
     @IBAction func unwindToQuestionPage(segue: UIStoryboardSegue){
         if sendetQuestionsList.count > 0 {
             questionsAndAnswersUI()
-            answerButton.isHidden = true
         } else {
             switch Locale.preferredLanguages[0].prefix(2) == "ru"{
             case true:
@@ -64,16 +58,11 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        if answerField.text?.isEmpty == false {
-            answerButton.isHidden = false
-        } else {
-            answerButton.isHidden = true
-        }
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if answerField.text?.isEmpty == true {
-            answerButton.isHidden = true
+            answerField.shake()
             return false
         } else {
             return true
@@ -98,7 +87,6 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
     func randomQuestion() -> Int{
         return(Int.random(in: 0..<sendetQuestionsList.count))
     }
@@ -107,11 +95,9 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         
         switch Locale.preferredLanguages[0].prefix(2) == "ru"{
         case true:
-            homeButton.setTitle("〈 ДОМОЙ", for: .normal)
             answerButton.setTitle("ОТВЕТ", for: .normal)
             answerField.placeholder = "Пишите Ваш ответ здесь"
         case false:
-            homeButton.setTitle("〈 HOME", for: .normal)
             answerButton.setTitle("ANSWER", for: .normal)
             answerField.placeholder = "Write your answer here"
         }
@@ -198,11 +184,6 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-        if answerField.text?.isEmpty == false {
-            answerButton.isHidden = false
-        } else {
-            answerButton.isHidden = true
-        }
         return false
     }
     
