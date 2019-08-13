@@ -147,11 +147,23 @@
                                 <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-Sa-hEO">
+                                <rect key="frame" x="39" y="449" width="83" height="44"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="〈HOME">
+                                    <color key="titleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FQH-jC-nyD" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="anZ-NM-Kvq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="systemFillColor"/>
                         <constraints>
+                            <constraint firstItem="Arn-Sa-hEO" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" constant="-79.5" id="0Sm-ua-CdN"/>
                             <constraint firstItem="mGi-3X-iBa" firstAttribute="centerX" secondItem="lIb-sz-E2y" secondAttribute="centerX" id="2Hh-rn-cdA"/>
                             <constraint firstItem="soT-NV-ggk" firstAttribute="top" secondItem="6zn-gY-LgJ" secondAttribute="bottom" constant="30" id="3xN-cr-JeD"/>
+                            <constraint firstItem="lIb-sz-E2y" firstAttribute="bottom" secondItem="Arn-Sa-hEO" secondAttribute="bottom" constant="75" id="9Tp-1e-RY3"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="bottom" secondItem="lIb-sz-E2y" secondAttribute="bottom" id="D11-0n-fvr"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="trailing" secondItem="lIb-sz-E2y" secondAttribute="trailing" id="LuY-tu-IW4"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="centerY" secondItem="6ot-Kr-G1l" secondAttribute="centerY" constant="30" id="R5g-Z6-xIn"/>
@@ -171,10 +183,12 @@
                     <connections>
                         <outlet property="answerButton" destination="soT-NV-ggk" id="Kbi-wf-vYk"/>
                         <outlet property="answerField" destination="6zn-gY-LgJ" id="I7l-vq-xSo"/>
+                        <outlet property="homeButton" destination="Arn-Sa-hEO" id="t5H-ht-24h"/>
                         <outlet property="questionLabel" destination="Yvy-qk-zPN" id="DCu-NA-rPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ar-OS-DA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FQH-jC-nyD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="821" y="124"/>
         </scene>

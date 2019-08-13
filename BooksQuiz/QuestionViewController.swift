@@ -19,6 +19,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         questionsAndAnswersUI()
         localizationChoiceQuestion()
         answerField.delegate = self
+        homeButton.isHidden = true
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
@@ -29,7 +30,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var questionLabel: UILabel!
     
-//    @IBOutlet weak var answerField: UITextField!
+    //    @IBOutlet weak var answerField: UITextField!
     @IBOutlet weak var answerField: ShakingTextField!
     
     @IBOutlet weak var answerButton: UIButton!
@@ -43,6 +44,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     @IBAction func unwindToQuestionPage(segue: UIStoryboardSegue){
         if sendetQuestionsList.count > 0 {
             questionsAndAnswersUI()
+            homeButton.isHidden = true
         } else {
             switch Locale.preferredLanguages[0].prefix(2) == "ru"{
             case true:
@@ -52,6 +54,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
             }
             answerButton.isHidden = true
             answerField.isHidden = true
+            homeButton.isHidden = false
         }
     }
     
@@ -61,12 +64,15 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if answerField.text?.isEmpty == true {
+        if answerField.isHidden == true {
+            return true
+        } else if answerField.text?.isEmpty == true {
             answerField.shake()
             return false
         } else {
             return true
         }
+        
     }
     
     var sendetQuestionsList = [String]()
