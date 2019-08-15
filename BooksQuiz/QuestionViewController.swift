@@ -49,8 +49,10 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
             switch Locale.preferredLanguages[0].prefix(2) == "ru"{
             case true:
                 questionLabel.text = "ВЫ ОТВЕТИЛИ НА ВСЕ ВОПРОСЫ"
+                homeButton.setTitle("〈 ДОМОЙ", for: .normal)
             case false:
                 questionLabel.text = "YOU ANSWERED ALL THE QUESTIONS"
+                homeButton.setTitle("〈 HOME", for: .normal)
             }
             answerButton.isHidden = true
             answerField.isHidden = true
