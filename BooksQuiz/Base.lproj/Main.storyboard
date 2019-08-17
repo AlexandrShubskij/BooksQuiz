@@ -380,10 +380,10 @@
                             <constraint firstItem="yvN-Kn-FkW" firstAttribute="bottom" secondItem="OU1-e4-YDP" secondAttribute="bottom" constant="75" id="6jg-Df-7b0"/>
                             <constraint firstItem="YPr-ad-icJ" firstAttribute="trailing" secondItem="yvN-Kn-FkW" secondAttribute="trailing" id="8R6-py-xvo"/>
                             <constraint firstItem="uSM-tT-p5z" firstAttribute="leading" secondItem="yvN-Kn-FkW" secondAttribute="leading" constant="40" id="ICh-ep-fCT"/>
-                            <constraint firstItem="uSM-tT-p5z" firstAttribute="top" secondItem="yvN-Kn-FkW" secondAttribute="top" constant="200" id="Od6-rJ-Jau"/>
                             <constraint firstItem="OU1-e4-YDP" firstAttribute="centerX" secondItem="zgo-zB-80l" secondAttribute="centerX" id="PYc-eo-1TS"/>
                             <constraint firstItem="YPr-ad-icJ" firstAttribute="leading" secondItem="yvN-Kn-FkW" secondAttribute="leading" id="Pem-Ao-pKo"/>
                             <constraint firstItem="yvN-Kn-FkW" firstAttribute="trailing" secondItem="uSM-tT-p5z" secondAttribute="trailing" constant="40" id="Shs-i3-e5A"/>
+                            <constraint firstItem="uSM-tT-p5z" firstAttribute="centerY" secondItem="zgo-zB-80l" secondAttribute="centerY" constant="-48" id="UC1-gA-9Pf"/>
                             <constraint firstItem="YPr-ad-icJ" firstAttribute="top" secondItem="yvN-Kn-FkW" secondAttribute="top" id="XUw-SZ-Yx2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvN-Kn-FkW"/>
