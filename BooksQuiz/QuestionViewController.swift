@@ -29,7 +29,6 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var questionLabel: UILabel!
     
-//    @IBOutlet weak var answerField: UITextField!
     @IBOutlet weak var answerField: ShakingTextField!
     
     @IBOutlet weak var answerButton: UIButton!
@@ -77,11 +76,11 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     func createQuestionsList(){
         switch Locale.preferredLanguages[0].prefix(2) == "ru"{
         case true:
-            for questions in questionsAndAnswersRuList.keys {
+            for questions in QuestionsRU.questionsAndAnswersRuList.keys {
                 sendetQuestionsList.append(questions)
             }
         case false:
-            for questions in questionsAndAnswersEnList.keys {
+            for questions in QuestionsEN.questionsAndAnswersEnList.keys {
                 sendetQuestionsList.append(questions)
             }
         }
@@ -119,7 +118,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         
         switch Locale.preferredLanguages[0].prefix(2) == "ru"{
         case true:
-            switch answerField.text?.uppercased() == questionsAndAnswersRuList[questionValue] {
+            switch answerField.text?.uppercased() == QuestionsRU.questionsAndAnswersRuList[questionValue] {
             case true:
                 dvc.message = "Ура! Верный ответ!"
                 switch (Score.sessionRightAnswers == nil)&&(Score.totalRightAnswers == nil){
@@ -147,7 +146,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
             }
             answerField.text = nil
         case false:
-            switch answerField.text?.uppercased() == questionsAndAnswersEnList[questionValue] {
+            switch answerField.text?.uppercased() == QuestionsEN.questionsAndAnswersEnList[questionValue] {
             case true:
                 dvc.message = "Good! You're right!"
                 switch (Score.sessionRightAnswers == nil)&&(Score.totalRightAnswers == nil){
@@ -187,18 +186,6 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
-    var questionsAndAnswersRuList = ["Какой номер у нехорошей квартиры?"                            : "50",
-                                     "Кто убил Сарумана?"                                           : "ГРИМА",
-                                     "Что находится за платяным шкафом?"                            : "НАРНИЯ",
-                                     "Под каким именем известен Том Марволо Реддл?"                 : "ВОЛДЕМОРТ"]
-    
-    
-    
-    
-    var questionsAndAnswersEnList = ["What number was the bad apartment?"                            : "50",
-                                     "Who killed Saruman?"                                           : "GRIMA",
-                                     "What is hiding behind a wardrobe?"                             : "NARNIA",
-                                     "By what name is Tom Marvolo Riddle known?"                     : "VOLDEMORT"]
     
     
 }
