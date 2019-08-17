@@ -8,9 +8,7 @@
 
 import Foundation
 class Score : NSObject{
-    static var gameRightAnswers : Int?
-    static var sessionRightAnswers : Int?
-    static var gameWrongAnswers : Int?
-    static var sessionlWrongAnswers : Int?
+    static var sessionRightAnswers = 0
+    static var sessionWrongAnswers = 0
 }
 

@@ -36,9 +36,22 @@ class ViewController: UIViewController {
             scoreButton.setTitle("SCORE", for: .normal)
         }
     }
+    
+    func checkscore() {
+        guard UserDefaults.standard.object(forKey: "TRA") != nil else {
+            UserDefaults.standard.set(0, forKey: "TRA")
+            return
+        }
+        guard UserDefaults.standard.object(forKey: "TWA") != nil else {
+            UserDefaults.standard.set(0, forKey: "TWA")
+            return
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         localizationChoiceStart()
+        checkscore()
     }
     
     

@@ -22,6 +22,9 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         homeButton.isHidden = true
     }
     
+    
+    
+    
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         answerField.text = ""
         return false
@@ -120,65 +123,38 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    var totalRightAnswers = UserDefaults.standard.integer(forKey: "TRA")
+    var totalWrongAnswers = UserDefaults.standard.integer(forKey: "TWA")
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dvc = segue.destination as? ResultViewController else { return }
-        
         switch Locale.preferredLanguages[0].prefix(2) == "ru"{
         case true:
             switch answerField.text?.uppercased() == QuestionsRU.questionsAndAnswersRuList[questionValue] {
             case true:
                 dvc.message = "Ура! Верный ответ!"
-                switch (Score.gameRightAnswers == nil)&&(Score.sessionRightAnswers == nil){
-                case true:
-                    Score.gameRightAnswers = 0
-                    Score.sessionRightAnswers = 0
-                    Score.gameRightAnswers! += 1
-                    Score.sessionRightAnswers! += 1
-                case false:
-                    Score.gameRightAnswers! += 1
-                    Score.sessionRightAnswers! += 1
-                }
+                Score.sessionRightAnswers += 1
+                totalRightAnswers += 1
+                UserDefaults.standard.set(totalRightAnswers, forKey: "TRA")
             case false:
                 dvc.message = "Упс... Ответ неверный..."
-                switch (Score.gameWrongAnswers == nil)&&(Score.sessionlWrongAnswers == nil){
-                case true:
-                    Score.gameWrongAnswers = 0
-                    Score.sessionlWrongAnswers = 0
-                    Score.gameWrongAnswers! += 1
-                    Score.sessionlWrongAnswers! += 1
-                case false:
-                    Score.gameWrongAnswers! += 1
-                    Score.sessionlWrongAnswers! += 1
-                }
+                Score.sessionWrongAnswers += 1
+                totalWrongAnswers += 1
+                UserDefaults.standard.set(totalWrongAnswers, forKey: "TWA")
             }
             answerField.text = nil
         case false:
             switch answerField.text?.uppercased() == QuestionsEN.questionsAndAnswersEnList[questionValue] {
             case true:
                 dvc.message = "Good! You're right!"
-                switch (Score.gameRightAnswers == nil)&&(Score.sessionRightAnswers == nil){
-                case true:
-                    Score.gameRightAnswers = 0
-                    Score.sessionRightAnswers = 0
-                    Score.gameRightAnswers! += 1
-                    Score.sessionRightAnswers! += 1
-                case false:
-                    Score.gameRightAnswers! += 1
-                    Score.sessionRightAnswers! += 1
-                }
+                Score.sessionRightAnswers += 1
+                totalRightAnswers += 1
+                UserDefaults.standard.set(totalRightAnswers, forKey: "TRA")
             case false:
                 dvc.message = "Oops... Your answer is wrong..."
-                switch (Score.gameWrongAnswers == nil)&&(Score.sessionlWrongAnswers == nil){
-                case true:
-                    Score.gameWrongAnswers = 0
-                    Score.sessionlWrongAnswers = 0
-                    Score.gameWrongAnswers! += 1
-                    Score.sessionlWrongAnswers! += 1
-                case false:
-                    Score.gameWrongAnswers! += 1
-                    Score.sessionlWrongAnswers! += 1
-                }
-                
+                Score.sessionWrongAnswers += 1
+                totalWrongAnswers += 1
+                UserDefaults.standard.set(totalWrongAnswers, forKey: "TWA")
             }
             answerField.text = nil
             
