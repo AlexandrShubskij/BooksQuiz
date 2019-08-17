@@ -122,8 +122,8 @@
                                 <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-Sa-hEO">
-                                <rect key="frame" x="50" y="449" width="220" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arn-Sa-hEO">
+                                <rect key="frame" x="39" y="449" width="83" height="44"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                 <state key="normal" title="〈HOME">
                                     <color key="titleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,23 +135,26 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="systemFillColor"/>
                         <constraints>
+<<<<<<< HEAD
+                            <constraint firstItem="Arn-Sa-hEO" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" constant="-79.5" id="0Sm-ua-CdN"/>
+                            <constraint firstItem="mGi-3X-iBa" firstAttribute="centerX" secondItem="lIb-sz-E2y" secondAttribute="centerX" id="2Hh-rn-cdA"/>
+                            <constraint firstItem="soT-NV-ggk" firstAttribute="top" secondItem="6zn-gY-LgJ" secondAttribute="bottom" constant="30" id="3xN-cr-JeD"/>
+                            <constraint firstItem="lIb-sz-E2y" firstAttribute="bottom" secondItem="Arn-Sa-hEO" secondAttribute="bottom" constant="75" id="9Tp-1e-RY3"/>
+=======
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="2AV-uF-eDO"/>
-                            <constraint firstItem="Arn-Sa-hEO" firstAttribute="leading" secondItem="lIb-sz-E2y" secondAttribute="leading" constant="50" id="2go-q6-7tX"/>
                             <constraint firstItem="lIb-sz-E2y" firstAttribute="trailing" secondItem="Yvy-qk-zPN" secondAttribute="trailing" constant="40" id="5qE-b5-M2s"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="leading" secondItem="lIb-sz-E2y" secondAttribute="leading" constant="50" id="CjA-pU-G8b"/>
+>>>>>>> newFeature
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="bottom" secondItem="lIb-sz-E2y" secondAttribute="bottom" id="D11-0n-fvr"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="centerY" secondItem="6ot-Kr-G1l" secondAttribute="centerY" id="DpN-Cu-dc4"/>
-                            <constraint firstItem="Arn-Sa-hEO" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="EHa-xS-Q7f"/>
                             <constraint firstItem="6zn-gY-LgJ" firstAttribute="top" secondItem="Yvy-qk-zPN" secondAttribute="bottom" constant="50" id="Hkc-Lk-BNj"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="trailing" secondItem="lIb-sz-E2y" secondAttribute="trailing" id="LuY-tu-IW4"/>
-                            <constraint firstItem="lIb-sz-E2y" firstAttribute="bottom" secondItem="Arn-Sa-hEO" secondAttribute="bottom" constant="75" id="YQd-vh-pji"/>
                             <constraint firstItem="soT-NV-ggk" firstAttribute="top" secondItem="6zn-gY-LgJ" secondAttribute="bottom" constant="20" id="bKz-xo-VC6"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="leading" secondItem="lIb-sz-E2y" secondAttribute="leading" id="h6F-Dg-bBD"/>
                             <constraint firstItem="lIb-sz-E2y" firstAttribute="trailing" secondItem="6zn-gY-LgJ" secondAttribute="trailing" constant="50" id="hwD-Gb-ksv"/>
                             <constraint firstItem="soT-NV-ggk" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="nev-NB-CZK"/>
                             <constraint firstItem="Yvy-qk-zPN" firstAttribute="centerX" secondItem="6ot-Kr-G1l" secondAttribute="centerX" id="sfA-ZY-0Ow"/>
                             <constraint firstItem="Yvy-qk-zPN" firstAttribute="leading" secondItem="lIb-sz-E2y" secondAttribute="leading" constant="40" id="zZg-cT-ZzJ"/>
-                            <constraint firstItem="lIb-sz-E2y" firstAttribute="trailing" secondItem="Arn-Sa-hEO" secondAttribute="trailing" constant="50" id="zlN-1K-HVp"/>
                             <constraint firstItem="ezj-3o-Llj" firstAttribute="top" secondItem="lIb-sz-E2y" secondAttribute="top" id="zwX-wv-HpZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lIb-sz-E2y"/>
@@ -168,7 +171,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ar-OS-DA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="FQH-jC-nyD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="819.375" y="123.59154929577466"/>
+            <point key="canvasLocation" x="821" y="124"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="GKx-vG-evY">
@@ -357,8 +360,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papirus" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-ad-icJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-e4-YDP" userLabel="NavigationButtons">
-                                <rect key="frame" x="51.5" y="449" width="217" height="44"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-e4-YDP" userLabel="NavigationButtons">
+                                <rect key="frame" x="39.5" y="449" width="241" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xom-Va-G0h">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="44"/>
@@ -371,7 +374,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLH-br-Mwk">
-                                        <rect key="frame" x="143" y="0.0" width="74" height="44"/>
+                                        <rect key="frame" x="167" y="0.0" width="74" height="44"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <state key="normal" title="NEXT〉">
                                             <color key="titleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

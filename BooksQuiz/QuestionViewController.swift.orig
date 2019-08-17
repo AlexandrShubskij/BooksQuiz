@@ -30,6 +30,10 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var questionLabel: UILabel!
     
+<<<<<<< HEAD
+    //    @IBOutlet weak var answerField: UITextField!
+=======
+>>>>>>> newFeature
     @IBOutlet weak var answerField: ShakingTextField!
     
     @IBOutlet weak var answerButton: UIButton!
@@ -73,6 +77,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         } else {
             return true
         }
+        
     }
     
     var sendetQuestionsList = [String]()

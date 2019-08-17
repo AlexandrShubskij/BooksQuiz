@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F242D54922FDDE9C004D4D0E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = F242D54822FDDE9C004D4D0E /* Score.swift */; };
 		F2B9A09423004CAF00EF8DD8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2B9A09323004CAF00EF8DD8 /* .gitignore */; };
+		F2BD6C92230810FF0031B742 /* QuestionsRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD6C91230810FF0031B742 /* QuestionsRU.swift */; };
+		F2BD6C94230819C60031B742 /* QuestionsEN.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD6C93230819C60031B742 /* QuestionsEN.swift */; };
 		F2C1DE8D2302A01500DFE459 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */; };
 		F2CEC77322F48CF300030E2E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CEC77222F48CF300030E2E /* ResultViewController.swift */; };
 		F2CEC77522F49D0200030E2E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CEC77422F49D0200030E2E /* ScoreViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		F242D54822FDDE9C004D4D0E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		F2B9A09323004CAF00EF8DD8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2BD6C91230810FF0031B742 /* QuestionsRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRU.swift; sourceTree = "<group>"; };
+		F2BD6C93230819C60031B742 /* QuestionsEN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsEN.swift; sourceTree = "<group>"; };
 		F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		F2CEC77222F48CF300030E2E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F2CEC77422F49D0200030E2E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				F2CEC77422F49D0200030E2E /* ScoreViewController.swift */,
 				F2CEC77222F48CF300030E2E /* ResultViewController.swift */,
 				F2F78EC822F46FE300941143 /* QuestionViewController.swift */,
+				F2BD6C91230810FF0031B742 /* QuestionsRU.swift */,
+				F2BD6C93230819C60031B742 /* QuestionsEN.swift */,
 				F2F78EA122F43E6000941143 /* Assets.xcassets */,
 				F2F78EA322F43E6000941143 /* LaunchScreen.storyboard */,
 				F2F78EA622F43E6000941143 /* Info.plist */,
@@ -252,9 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BD6C92230810FF0031B742 /* QuestionsRU.swift in Sources */,
 				F2CEC77322F48CF300030E2E /* ResultViewController.swift in Sources */,
 				F2F78E9D22F43E5E00941143 /* ViewController.swift in Sources */,
 				F242D54922FDDE9C004D4D0E /* Score.swift in Sources */,
+				F2BD6C94230819C60031B742 /* QuestionsEN.swift in Sources */,
 				F2F78E9922F43E5E00941143 /* AppDelegate.swift in Sources */,
 				F2F78EC922F46FE300941143 /* QuestionViewController.swift in Sources */,
 				F2F78E9B22F43E5E00941143 /* SceneDelegate.swift in Sources */,
