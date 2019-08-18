@@ -10,12 +10,12 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books" translatesAutoresizingMaskIntoConstraints="NO" id="qAl-LK-hgT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books" highlightedImage="books" translatesAutoresizingMaskIntoConstraints="NO" id="fta-5F-zgm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-J1-qru" userLabel="Game Name">
@@ -42,23 +42,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="qAl-LK-hgT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cxm-92-h7W"/>
-                            <constraint firstItem="qAl-LK-hgT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KI2-xS-V4x"/>
+                            <constraint firstItem="fta-5F-zgm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6US-cL-a1R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fta-5F-zgm" secondAttribute="trailing" id="I5M-dl-BsV"/>
                             <constraint firstItem="Vvh-J1-qru" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Q5n-jQ-AId"/>
                             <constraint firstItem="qVq-py-ma7" firstAttribute="top" secondItem="Vvh-J1-qru" secondAttribute="bottom" constant="40" id="SlK-a3-Gj9"/>
-                            <constraint firstItem="qAl-LK-hgT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y9J-AP-Dek"/>
-                            <constraint firstItem="qAl-LK-hgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzq-Aj-dua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fta-5F-zgm" secondAttribute="bottom" id="c6h-xy-tmO"/>
                             <constraint firstItem="qVq-py-ma7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i94-f0-cak"/>
+                            <constraint firstItem="fta-5F-zgm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nTb-9V-54P"/>
                             <constraint firstItem="Vvh-J1-qru" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="of3-Pt-WSC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="50.625" y="375"/>
         </scene>
     </scenes>
     <resources>

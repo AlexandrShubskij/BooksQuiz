@@ -111,6 +111,7 @@
 				F2C1DE8C2302A01500DFE459 /* ShakingTextField.swift */,
 				F2F78E9822F43E5E00941143 /* AppDelegate.swift */,
 				F2F78E9A22F43E5E00941143 /* SceneDelegate.swift */,
+				F2F78EA322F43E6000941143 /* LaunchScreen.storyboard */,
 				F2F78E9C22F43E5E00941143 /* ViewController.swift */,
 				F242D54822FDDE9C004D4D0E /* Score.swift */,
 				F2F78E9E22F43E5E00941143 /* Main.storyboard */,
@@ -119,7 +120,6 @@
 				F2F78EC822F46FE300941143 /* QuestionViewController.swift */,
 				F2BD6C91230810FF0031B742 /* QuestionsRU.swift */,
 				F2BD6C93230819C60031B742 /* QuestionsEN.swift */,
-				F2F78EA322F43E6000941143 /* LaunchScreen.storyboard */,
 				F236D7552309490B00CB8645 /* Assets.xcassets */,
 				F2F78EA622F43E6000941143 /* Info.plist */,
 			);
