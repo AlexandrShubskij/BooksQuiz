@@ -8,8 +8,8 @@
 
 import Foundation
 class QuestionsEN : NSObject {
-    static let questionsAndAnswersEnList = ["What number was the bad apartment?"                            : "50",
-                                            "Who killed Saruman?"                                           : "GRIMA",
-                                            "What is hiding behind a wardrobe?"                             : "NARNIA",
-                                            "By what name is Tom Marvolo Riddle known?"                     : "VOLDEMORT"]
+    static let questionsAndAnswersEnList = ["What number was the bad apartment?"                    : "50",
+                                            "Who killed Saruman?"                                   : "GRIMA",
+                                            "What is hiding behind a wardrobe?"                     : "NARNIA",
+                                            "By what name is Tom Marvolo Riddle known?"             : "VOLDEMORT"]
 }
