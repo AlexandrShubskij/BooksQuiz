@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F236D7562309490B00CB8645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F236D7552309490B00CB8645 /* Assets.xcassets */; };
 		F242D54922FDDE9C004D4D0E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = F242D54822FDDE9C004D4D0E /* Score.swift */; };
 		F2B9A09423004CAF00EF8DD8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2B9A09323004CAF00EF8DD8 /* .gitignore */; };
 		F2BD6C92230810FF0031B742 /* QuestionsRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD6C91230810FF0031B742 /* QuestionsRU.swift */; };
@@ -18,7 +19,6 @@
 		F2F78E9B22F43E5E00941143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F78E9A22F43E5E00941143 /* SceneDelegate.swift */; };
 		F2F78E9D22F43E5E00941143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F78E9C22F43E5E00941143 /* ViewController.swift */; };
 		F2F78EA022F43E5E00941143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F78E9E22F43E5E00941143 /* Main.storyboard */; };
-		F2F78EA222F43E6000941143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F78EA122F43E6000941143 /* Assets.xcassets */; };
 		F2F78EA522F43E6000941143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F78EA322F43E6000941143 /* LaunchScreen.storyboard */; };
 		F2F78EC922F46FE300941143 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F78EC822F46FE300941143 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F236D7552309490B00CB8645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F242D54822FDDE9C004D4D0E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		F2B9A09323004CAF00EF8DD8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F2BD6C91230810FF0031B742 /* QuestionsRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRU.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		F2F78E9A22F43E5E00941143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2F78E9C22F43E5E00941143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2F78E9F22F43E5E00941143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2F78EA122F43E6000941143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F78EA422F43E6000941143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F78EA622F43E6000941143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F78EAB22F43E6000941143 /* BooksQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,8 +119,8 @@
 				F2F78EC822F46FE300941143 /* QuestionViewController.swift */,
 				F2BD6C91230810FF0031B742 /* QuestionsRU.swift */,
 				F2BD6C93230819C60031B742 /* QuestionsEN.swift */,
-				F2F78EA122F43E6000941143 /* Assets.xcassets */,
 				F2F78EA322F43E6000941143 /* LaunchScreen.storyboard */,
+				F236D7552309490B00CB8645 /* Assets.xcassets */,
 				F2F78EA622F43E6000941143 /* Info.plist */,
 			);
 			path = BooksQuiz;
@@ -232,7 +232,7 @@
 			files = (
 				F2B9A09423004CAF00EF8DD8 /* .gitignore in Resources */,
 				F2F78EA522F43E6000941143 /* LaunchScreen.storyboard in Resources */,
-				F2F78EA222F43E6000941143 /* Assets.xcassets in Resources */,
+				F236D7562309490B00CB8645 /* Assets.xcassets in Resources */,
 				F2F78EA022F43E5E00941143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
