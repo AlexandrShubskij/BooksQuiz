@@ -15,8 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books" highlightedImage="books" translatesAutoresizingMaskIntoConstraints="NO" id="fta-5F-zgm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books" translatesAutoresizingMaskIntoConstraints="NO" id="2tO-Xe-y0J">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="Vvh-J1-qru" userLabel="Game Name">
                                 <rect key="frame" x="45.5" y="208" width="229.5" height="152"/>
@@ -43,13 +44,13 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="fta-5F-zgm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6US-cL-a1R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fta-5F-zgm" secondAttribute="trailing" id="I5M-dl-BsV"/>
                             <constraint firstItem="Vvh-J1-qru" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Q5n-jQ-AId"/>
+                            <constraint firstItem="2tO-Xe-y0J" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qhf-Sv-d9G"/>
+                            <constraint firstItem="2tO-Xe-y0J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SAk-k8-Qjy"/>
                             <constraint firstItem="qVq-py-ma7" firstAttribute="top" secondItem="Vvh-J1-qru" secondAttribute="bottom" constant="40" id="SlK-a3-Gj9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fta-5F-zgm" secondAttribute="bottom" id="c6h-xy-tmO"/>
+                            <constraint firstItem="2tO-Xe-y0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Up3-6T-F3n"/>
+                            <constraint firstItem="2tO-Xe-y0J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e4f-V4-en4"/>
                             <constraint firstItem="qVq-py-ma7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i94-f0-cak"/>
-                            <constraint firstItem="fta-5F-zgm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nTb-9V-54P"/>
                             <constraint firstItem="Vvh-J1-qru" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="of3-Pt-WSC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +64,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="books" width="480" height="800"/>
+        <image name="books" width="240" height="400"/>
     </resources>
 </document>
