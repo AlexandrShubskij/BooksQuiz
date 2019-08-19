@@ -130,7 +130,7 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         guard let dvc = segue.destination as? ResultViewController else { return }
         switch Locale.preferredLanguages[0].prefix(2) == "ru"{
         case true:
-            switch (answerField.text?.uppercased() == (QuestionsRU.questionsAndAnswersRuList[questionValue]! + " ")) || (answerField.text?.uppercased() == QuestionsEN.questionsAndAnswersEnList[questionValue]!) {
+            switch (answerField.text?.uppercased() == (QuestionsRU.questionsAndAnswersRuList[questionValue]! + " ")) || (answerField.text?.uppercased() == QuestionsRU.questionsAndAnswersRuList[questionValue]) {
             case true:
                 dvc.message = "Ура! Верный ответ!"
                 Score.sessionRightAnswers += 1
