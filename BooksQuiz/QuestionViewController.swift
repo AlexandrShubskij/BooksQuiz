@@ -50,10 +50,10 @@ class QuestionViewController: UIViewController, UITextFieldDelegate {
         } else {
             switch Locale.preferredLanguages[0].prefix(2) == "ru"{
             case true:
-                questionLabel.text = "ВЫ ОТВЕТИЛИ НА ВСЕ ВОПРОСЫ"
+                questionLabel.text = "ВЫ ДОШЛИ ДО КОНЦА И ОТВЕТИЛИ ПРАВИЛЬНО НА \(Score.sessionRightAnswers) ВОПРОСОВ ИЗ \(Score.sessionRightAnswers + Score.sessionWrongAnswers)!"
                 homeButton.setTitle("〈 ДОМОЙ", for: .normal)
             case false:
-                questionLabel.text = "YOU ANSWERED ALL THE QUESTIONS"
+                questionLabel.text = "YOU REACHED AND ANSWERED CORRECTLY FOR \(Score.sessionRightAnswers) QUESTIONS FROM \(Score.sessionWrongAnswers + Score.sessionRightAnswers)"
                 homeButton.setTitle("〈 HOME", for: .normal)
             }
             answerButton.isHidden = true
