@@ -16,5 +16,9 @@ class QuestionsEN : NSObject {
                                             "The main enemy of Sherlock Holmes is a professor ..."                                  : "MORIARTY",
                                             "The name of the main character from the most famous book of Luc Besson"                : "ARTHUR",
                                             "In which city are the actions of the book \"Arch of Triumph\""                         : "PARIS",
-                                            "How many chairs were there in one famous book?"                                        : "12"]
+                                            "How many chairs were there in one famous book?"                                        : "12",
+                                            "What generation did Viktor Pelevin write about?"                                       : "P",
+                                            "What happened to John Coffey?"                                                         : "EXECUTION",
+                                            "Tyler Darden's Love name"                                                              : "MARLA",
+                                            "Big .. is watching you"                                                                : "BROTHER"]
 }
